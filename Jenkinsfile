@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/yashiz4u-lgtm/blue-green-project.git'
+                git branch: 'main', url: 'https://github.com/yashiz4u-lgtm/blue-green-project.git'
             }
         }
 
